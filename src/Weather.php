@@ -8,11 +8,12 @@ use GuzzleHttp\Client;
 class Weather {
     private Client $client;
     public function __construct(
-        private readonly string $apikey = '0fa5c7356dcb3ea7c65a7b756832bfcd',
+        private readonly string $apikey = '',
         private readonly string $apiurl = 'http://api.openweathermap.org/data/2.5/weather'
 
     )
-    {
+    {   $this->apikey = $_ENV['WEATHER_API_KEY'] ?? getenv('WEATHER_API_KEY');
+        $this->client = new Client();
         $this->client = new Client();
     }
 
