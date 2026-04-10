@@ -1,10 +1,10 @@
-# 🌤️ Weather App — PHP + OpenWeatherMap
+# Weather App — PHP + OpenWeatherMap
 
 A simple PHP CLI app that fetches real-time weather data using the OpenWeatherMap API and Guzzle HTTP client.
 
 ---
 
-## 📋 Requirements
+## Requirements
 
 - PHP 8.0+
 - Composer
@@ -12,7 +12,7 @@ A simple PHP CLI app that fetches real-time weather data using the OpenWeatherMa
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Latihan Pweb/
@@ -28,7 +28,7 @@ Latihan Pweb/
 
 ---
 
-## 🚀 Installation
+## Installation
 
 **1. Clone the repository**
 ```bash
@@ -53,7 +53,7 @@ WEATHER_API_KEY=your_api_key_here
 
 ---
 
-## ▶️ Usage
+## Usage
 
 Run the app from the project root with a city name as argument:
 ```bash
@@ -85,7 +85,7 @@ Penggunaan Yang Benar : php Call.php <nama_kota>
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. `Call.php` reads the city name from the command line argument (`$argv[1]`)
 2. Creates a `Weather` object and calls `getweather($city)`
@@ -94,7 +94,7 @@ Penggunaan Yang Benar : php Call.php <nama_kota>
 
 ---
 
-## 🔒 Security
+## Security
 
 - Never commit your `.env` file or API key
 - `.gitignore` excludes `vendor/` and `.env` automatically
@@ -102,7 +102,7 @@ Penggunaan Yang Benar : php Call.php <nama_kota>
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 | Package | Version |
 |---|---|
@@ -110,6 +110,6 @@ Penggunaan Yang Benar : php Call.php <nama_kota>
 
 ---
 
-## 👤 Author
+## Author
 
 **Kesit** — kesit3p@gmail.com
