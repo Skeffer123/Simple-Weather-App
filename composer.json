@@ -1,0 +1,15 @@
+{
+    "name": "kesit/latihanpweb",
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kesit\\Latihanpweb\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "Kesit",
+        "email": "kesit3p@gmail.com"
+    }]
+}
