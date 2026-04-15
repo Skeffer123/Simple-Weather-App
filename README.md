@@ -1,8 +1,7 @@
-# 🌤️ Weather App — PHP CLI
+# Weather App — PHP CLI
 
 A simple PHP command-line app that fetches real-time weather data using the [OpenWeatherMap API](https://openweathermap.org/api) and Guzzle HTTP client.
 
----
 
 ## Requirements
 
@@ -10,11 +9,11 @@ A simple PHP command-line app that fetches real-time weather data using the [Ope
 - Composer
 - OpenWeatherMap API Key → [Daftar gratis di sini](https://openweathermap.org/api)
 
----
 
-## Project Structure
 
-```
+# Project Structure
+
+
 Latihan Pweb/
 ├── src/
 │   └── Weather.php       # Weather class (Guzzle + API logic)
@@ -24,9 +23,9 @@ Latihan Pweb/
 ├── .env                  # API key kamu (jangan di-commit)
 ├── example.env           # Template untuk kolaborator
 └── .gitignore
-```
 
----
+
+
 
 ## Installation
 
@@ -108,7 +107,7 @@ Call.php  →  baca $argv[1]  →  buat objek Weather  →  panggil getWeather($
 
 ## Security
 
-> ⚠️ Jangan pernah commit file `.env` atau API key kamu ke repository.
+>  Jangan pernah commit file `.env` atau API key kamu ke repository.
 
 - `.gitignore` sudah mengecualikan `vendor/` dan `.env` secara otomatis
 - Gunakan `example.env` sebagai template — tidak mengandung kredensial asli
