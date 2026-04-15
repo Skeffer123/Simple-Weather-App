@@ -1,19 +1,22 @@
 <?php
-
 namespace Kesit\Latihanpweb;
 
+use Dotenv\Dotenv;
+require __DIR__ . '/../vendor/autoload.php';
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
 
 use GuzzleHttp\Client;
 
 class Weather {
     private Client $client;
     public function __construct(
-        private readonly string $apikey = '',
+        private  string $apikey = '',
         private readonly string $apiurl = 'http://api.openweathermap.org/data/2.5/weather'
 
     )
     {   $this->apikey = $_ENV['WEATHER_API_KEY'] ?? getenv('WEATHER_API_KEY');
-        $this->client = new Client();
         $this->client = new Client();
     }
 
