@@ -13,7 +13,7 @@ A simple PHP command-line app that fetches real-time weather data using the [Ope
 
 # Project Structure
 
-
+```
 Latihan Pweb/
 ├── src/
 │   └── Weather.php       # Weather class (Guzzle + API logic)
@@ -23,7 +23,7 @@ Latihan Pweb/
 ├── .env                  # API key kamu (jangan di-commit)
 ├── example.env           # Template untuk kolaborator
 └── .gitignore
-
+```
 
 
 
